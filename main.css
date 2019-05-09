@@ -31,6 +31,13 @@ h1{
     width: 80px;
     height: 80px;
     opacity: 0.85;
+    transform-origin: 71% 29%;
+    transition: transform 0.5s ease-in-out;
+}
+@media (min-width: 451px) {
+    header:hover #wrench{
+        transform: rotate(-45deg); 
+    }
 }
 
 footer{
@@ -53,6 +60,19 @@ footer > p {
     left: 2px;
     height: 18px;
     width: 18px;
+}
+#lightbulb-light{
+    position: absolute;
+    top: -11px;
+    left: 8px;
+    height: 6px;
+    width: 6px;
+    border-radius: 9999px;
+    background-color: rgba(255,218,132,1);
+    transition: box-shadow 0.2s ease-in;
+}
+footer:hover #lightbulb-light{
+    box-shadow: 0px 0px 50px 5px rgba(255,218,132,1);
 }
 
 
