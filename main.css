@@ -43,28 +43,29 @@ h1{
 footer{
     position: relative;
     align-self: stretch;
-    background-color: rgba(0,0,0,0.85);
+    display: flexbox;
+    flex-direction: column;
 }
 footer #banner {
     margin: 0;
-    padding: 5px;
+    padding: 4px;
+    background-color: rgba(0,0,0,0.85);
     color: white;
     font-family: monospace;
     font-size: 0.8em;
-    line-height: 1rem;
     text-align: center;
 }
 footer #lightbulb{
     position: absolute;
     top: -20px;
-    right: 2px;
+    left: 5px;
     height: 18px;
     width: 18px;
 }
 footer #lightbulb-light{
     position: absolute;
     top: -11px;
-    right: 8px;
+    left: 11px;
     height: 6px;
     width: 6px;
     border-radius: 9999px;
@@ -72,17 +73,14 @@ footer #lightbulb-light{
     transition: box-shadow 0.2s ease-in;
 }
 footer:hover #lightbulb-light{
-    box-shadow: 0px 0px 50px 5px rgba(255,218,132,1);
+    box-shadow: 0px 0px 50px 10px rgba(255,218,132,1);
 }
 
 footer #links{
     margin: 0;
-    padding: 2px 7px;
-    position: absolute;
-    top: 0;
-    transform: translateY(-100%);
-    left: 0;
+    padding: 2px 5px;
     list-style-type: none;
+    align-self: flex-start;
 }
 footer #links > li{
     margin: 0;
@@ -91,14 +89,15 @@ footer #links > li{
 }
 footer #links > li > img{
     display: block;
-    width: 24px;
-    height: 24px;
+    width: 18px;
+    height: 18px;
     margin-right: 5px;
 }
 footer #links > li > a{
     color: rgba(0,0,0,0.85);
     text-decoration: none;
     outline: none;
+    font-size: 0.8em;
 }
 footer #links > li > a:hover,
 footer #links > li > a:focus{
